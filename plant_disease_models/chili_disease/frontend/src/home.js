@@ -152,22 +152,6 @@ export const ImageUpload = () => {
   const [isLoading, setIsloading] = useState(false);
   let confidence = 0;
 
-  const sendFile = async () => {
-    if (image) {
-      let formData = new FormData();
-      formData.append("file", selectedFile);
-      let res = await axios({
-        method: "post",
-        url: process.env.REACT_APP_API_URL,
-        data: formData,
-      });
-      if (res.status === 200) {
-        setData(res.data);
-      }
-      setIsloading(false);
-    }
-  }
-
   const clearData = () => {
     setData(null);
     setImage(false);
@@ -188,9 +172,30 @@ export const ImageUpload = () => {
     if (!preview) {
       return;
     }
+  
     setIsloading(true);
+  
+    const sendFile = async () => {
+      if (image) {
+        let formData = new FormData();
+        formData.append("file", selectedFile);
+        let res = await axios({
+          method: "post",
+          url: process.env.REACT_APP_API_URL,
+          data: formData,
+        });
+        if (res.status === 200) {
+          setData(res.data);
+        }
+        setIsloading(false);
+      }
+    }
+  
+  
     sendFile();
-  }, [preview]);
+  
+  }, [preview, image, selectedFile]);
+  
 
   const onSelectFile = (files) => {
     if (!files || files.length === 0) {
@@ -242,7 +247,7 @@ export const ImageUpload = () => {
               {!image && <CardContent className={classes.content}>
                 <DropzoneArea
                   acceptedFiles={['image/*']}
-                  dropzoneText={"Drag and drop an image of a potato plant leaf to process"}
+                  dropzoneText={"Drag and drop an image of a plant leaf to process"}
                   onChange={onSelectFile}
                 />
               </CardContent>}
