@@ -5,11 +5,12 @@ import matplotlib.pyplot as plt
 
 BATCH_SIZE = 32
 IMAGE_SIZE = 256
-CHANNELS = 3
-EPOCHS = 50 
+CHANNELS=3
+EPOCHS=50
 
 dataset = tf.keras.preprocessing.image_dataset_from_directory(
     "InBloom",
+    seed = 123,
     shuffle=True,
     image_size=(IMAGE_SIZE,IMAGE_SIZE),
     batch_size= BATCH_SIZE
@@ -17,16 +18,18 @@ dataset = tf.keras.preprocessing.image_dataset_from_directory(
 
 class_names = dataset.class_names
 
+for image_batch, labels_batch in dataset.take(1):
+    print(image_batch.shape)
+    print(labels_batch.numpy())
+
 plt.figure(figsize=(10, 10))
-for image_batch, label_batch in dataset.take(1):
+for image_batch, labels_batch in dataset.take(1):
     for i in range(12):
-        normalized_image = image_batch[0].numpy() / 255.0
         ax = plt.subplot(3, 4, i + 1)
-        plt.imshow(normalized_image.astype("uint8"))
-        plt.show()
-        plt.title(class_names[label_batch[i]])
+        plt.imshow(image_batch[i].numpy().astype("uint8"))
+        plt.title(class_names[labels_batch[i]])
         plt.axis("off")
-    
+
 len(dataset)
 train_size = 0.8
 len(dataset)*train_size
@@ -76,7 +79,6 @@ data_augmentation = tf.keras.Sequential([
   layers.experimental.preprocessing.RandomFlip("horizontal_and_vertical"),
   layers.experimental.preprocessing.RandomRotation(0.2),
 ])
-
 train_ds = train_ds.map(
     lambda x, y: (data_augmentation(x, training=True), y)
 ).prefetch(buffer_size=tf.data.AUTOTUNE)
@@ -114,14 +116,13 @@ model.compile(
 
 history = model.fit(
     train_ds,
-    batch_size = BATCH_SIZE,
-    validation_data = val_ds,
-    verbose = 1,
-    epochs = 50,
+    batch_size=BATCH_SIZE,
+    validation_data=val_ds,
+    verbose=1,
+    epochs=50,
 )
 
 scores = model.evaluate(test_ds)
-scores
 
 import numpy as np
 for images_batch, labels_batch in test_ds.take(1):
