@@ -126,19 +126,19 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   detail: {
-    backgroundColor: 'white',
+    backgroundColor: '#dfd2c0',
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
     alignItems: 'center',
   },
   appbar: {
-    background: '#be6a77',
+    background: '#065c55 ',
     boxShadow: 'none',
-    color: 'white'
+    color: '#dfd2c0'
   },
   loader: {
-    color: '#be6a77 !important',
+    color: '#065c55 !important',
   }
 }));
 export const ImageUpload = () => {
@@ -240,7 +240,7 @@ export const ImageUpload = () => {
               {!image && <CardContent className={classes.content}>
                 <DropzoneArea
                   acceptedFiles={['image/*']}
-                  dropzoneText={"Drag and drop an image of a plant to process"}
+                  dropzoneText={"Drag and drop image to process"}
                   onChange={onSelectFile}
                 />
               </CardContent>}
