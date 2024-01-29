@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -14,8 +14,6 @@ import image from "./bg.png";
 import { DropzoneArea } from 'material-ui-dropzone';
 import { common } from '@material-ui/core/colors';
 import Clear from '@material-ui/icons/Clear';
-
-
 
 
 const ColorButton = withStyles((theme) => ({
@@ -152,6 +150,22 @@ export const ImageUpload = () => {
   const [isLoading, setIsloading] = useState(false);
   let confidence = 0;
 
+  const sendFile = useCallback(async () => {
+    if (image) {
+      let formData = new FormData();
+      formData.append("file", selectedFile);
+      let res = await axios({
+        method: "post",
+        url: process.env.REACT_APP_API_URL,
+        data: formData,
+      });
+      if (res.status === 200) {
+        setData(res.data);
+      }
+      setIsloading(false);
+    }
+  }, [image, selectedFile]);
+
   const clearData = () => {
     setData(null);
     setImage(false);
@@ -172,30 +186,9 @@ export const ImageUpload = () => {
     if (!preview) {
       return;
     }
-  
     setIsloading(true);
-  
-    const sendFile = async () => {
-      if (image) {
-        let formData = new FormData();
-        formData.append("file", selectedFile);
-        let res = await axios({
-          method: "post",
-          url: process.env.REACT_APP_API_URL,
-          data: formData,
-        });
-        if (res.status === 200) {
-          setData(res.data);
-        }
-        setIsloading(false);
-      }
-    }
-  
-  
     sendFile();
-  
-  }, [preview, image, selectedFile]);
-  
+  }, [preview, sendFile]);
 
   const onSelectFile = (files) => {
     if (!files || files.length === 0) {
@@ -218,7 +211,7 @@ export const ImageUpload = () => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            CodeBasics: Potato Disease Classification
+            InBloom: Plant Disease Detection
           </Typography>
           <div className={classes.grow} />
           <Avatar src={cblogo}></Avatar>
@@ -247,7 +240,7 @@ export const ImageUpload = () => {
               {!image && <CardContent className={classes.content}>
                 <DropzoneArea
                   acceptedFiles={['image/*']}
-                  dropzoneText={"Drag and drop an image of a plant leaf to process"}
+                  dropzoneText={"Drag and drop an image of a plant to process"}
                   onChange={onSelectFile}
                 />
               </CardContent>}
