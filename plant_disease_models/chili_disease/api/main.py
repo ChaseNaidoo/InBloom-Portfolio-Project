@@ -11,7 +11,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost", "http://localhost:3000"],
+    allow_origins=["http://localhost", "http://localhost:3000", "https://inbloom-portfolio-project.netlify.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
