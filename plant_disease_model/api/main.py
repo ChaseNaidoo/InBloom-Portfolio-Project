@@ -19,15 +19,25 @@ app.add_middleware(
 
 MODEL = tf.keras.models.load_model("../models/1")
 
-CLASS_NAMES = ["Chili_healthy", "Chili_leaf curl", "Chili_leaf spot",
-               "Corn_(maize)___Common_rust_", "Corn_(maize)___healthy", "Corn_(maize)___Northern_Leaf_Blight",
-               "Grape___Black_rot", "Grape___Esca_(Black_Measles)", "Grape___healthy",
-               "Potato___Early_blight", "Potato___healthy", "Potato___Late_blight",
-               "Tomato___Early_blight", "InBloom/Tomato___healthy", "Tomato___Late_blight"]
+CLASS_NAMES = ["Chili_healthy",
+               "Chili_leaf curl", 
+               "Chili_leaf spot",
+               "Corn_(maize)___Common_rust_", 
+               "Corn_(maize)___healthy", 
+               "Corn_(maize)___Northern_Leaf_Blight",
+               "Grape___Black_rot", 
+               "Grape___Esca_(Black_Measles)", 
+               "Grape___healthy",
+               "Potato___Early_blight", 
+               "Potato___healthy", 
+               "Potato___Late_blight",
+               "Tomato___Early_blight", 
+               "Tomato___healthy", 
+               "Tomato___Late_blight"]
 
 @app.get("/ping")
 async def ping():
-    return "Staus: OK"
+    return "Status: OK"
 
 def read_file_as_image(data) -> np.ndarray:
     image = np.array(Image.open(BytesIO(data)))
