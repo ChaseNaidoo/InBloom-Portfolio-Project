@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     maxWidth: 400,
     height: 500,
-    backgroundColor: 'transparent',
+    backgroundColor: '#065c2a',
     boxShadow: '0px 9px 70px 0px rgb(0 0 0 / 30%) !important',
     borderRadius: '15px',
   },
@@ -233,14 +233,14 @@ export const ImageUpload = () => {
                   className={classes.media}
                   image={preview}
                   component="image"
-                  title="Contemplative Reptile"
+                  title="Image"
                 />
               </CardActionArea>
               }
               {!image && <CardContent className={classes.content}>
                 <DropzoneArea
                   acceptedFiles={['image/*']}
-                  dropzoneText={"Drag and drop image to process"}
+                  dropzoneText={"Drag and drop an image to process"}
                   onChange={onSelectFile}
                 />
               </CardContent>}
