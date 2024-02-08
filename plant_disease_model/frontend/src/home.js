@@ -214,7 +214,7 @@ export const ImageUpload = () => {
             InBloom: Plant Disease Detection
           </Typography>
           <div className={classes.grow} />
-          <Avatar src={cblogo}></Avatar>
+          <Avatar src={logo}></Avatar>
         </Toolbar>
       </AppBar>
       <Container maxWidth={false} className={classes.mainContainer} disableGutters={true}>
