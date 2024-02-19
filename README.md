@@ -47,4 +47,4 @@ If you'd like to contribute to the project, please follow these steps:
 **Authors:** [Cameron Chase Naidoo](https://github.com/ChaseNaidoo)
 
 ## Licensing
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License.
