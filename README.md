@@ -48,7 +48,7 @@ If you'd like to contribute to the project, please follow these steps:
 - [Plant AI](https://github.com/soumyajit4419/Plant_AI)
 
 ## Authors
-[Cameron Chase Naidoo](https://github.com/ChaseNaidoo)
+[Cameron Chase Naidoo](https://www.linkedin.com/in/cameron-chase-naidoo/)
 
 ## Licensing
 This project is licensed under the MIT License.
