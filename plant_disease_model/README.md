@@ -1,9 +1,14 @@
 # InBloom: Empowering Agriculture Through Open-Source Plant Disease Detection
+![Screenshot 2024-02-18 at 15-08-49 InBloom_presentation](https://github.com/ChaseNaidoo/InBloom-Portfolio-Project/assets/125469506/bdb061a4-6b50-4c33-9078-2b4597ec02ec)
 
-## Introduction
+## Overview
 InBloom addresses the challenge of providing an easy and effective way for individuals, particularly farmers, to determine the health of their plants through AI-driven plant disease detection.
 
-**Authors:** [Cameron Chase Naidoo](https://github.com/ChaseNaidoo)
+## Project Inspiration
+It all started with a news segment. A story about a single, unemployed mother of one. Living in the rural areas with restricted access to food she would often go days without eating just so she could give whatever she could to her newborn. However, despite the effort and sacrifice the child is ended up malnourished.
+This affected me deeply. I thought if she could not get to access to affordable and nutritious food. What if we could bring the food to her? What if she could grow crops in her own backyard?
+Coming from a background in biotechnology, I have knowledge in the difficulties of growing crops due to disease and infections. Having researched the very organisms that cause these diseases it is essential to detect plant disease as early as possible to prevent further spread.
+By leveraging artificial intelligence we can do just that. InBloom attempts to provide users with a completely free and open-source solution to predict the health of a plant through image processing.
 
 ## Installation
 To install and set up the project, follow these steps:
@@ -29,6 +34,8 @@ If you'd like to contribute to the project, please follow these steps:
 ## Related Projects
 - [Potato Disease Classification](https://github.com/codebasics/potato-disease-classification)
 - [Plant AI](https://github.com/soumyajit4419/Plant_AI)
+
+**Authors:** [Cameron Chase Naidoo](https://github.com/ChaseNaidoo)
 
 ## Licensing
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
