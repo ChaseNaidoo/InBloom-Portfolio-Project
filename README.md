@@ -47,7 +47,8 @@ If you'd like to contribute to the project, please follow these steps:
 - [Potato Disease Classification](https://github.com/codebasics/potato-disease-classification)
 - [Plant AI](https://github.com/soumyajit4419/Plant_AI)
 
-**Authors:** [Cameron Chase Naidoo](https://github.com/ChaseNaidoo)
+## Authors
+[Cameron Chase Naidoo](https://github.com/ChaseNaidoo)
 
 ## Licensing
 This project is licensed under the MIT License.
