@@ -10,7 +10,8 @@ This affected me deeply. I thought if she could not get to access to affordable 
 Coming from a background in biotechnology, I have knowledge in the difficulties of growing crops due to disease and infections. Having researched the very organisms that cause these diseases it is essential to detect plant disease as early as possible to prevent further spread.
 By leveraging artificial intelligence we can do just that. InBloom attempts to provide users with a completely free and open-source solution to predict the health of a plant through image processing.
 
-- [Landing Page](https://chasenaidoo.github.io/)
+- [Portfolio Landing Page](https://chasenaidoo.github.io/)
+- [Portfolio Project Blog](https://www.linkedin.com/posts/cameron-chase-naidoo_artificialintelligence-ai-pythonprogramming-activity-7164997873510563840-75z0?utm_source=share&utm_medium=member_desktop)
 
 ## Installation
 To install and set up the project, follow these steps:
