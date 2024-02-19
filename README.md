@@ -17,7 +17,6 @@ By leveraging artificial intelligence we can do just that. InBloom attempts to p
 To install and set up the project, follow these steps:
 1. Clone the repository: `git clone https://github.com/ChaseNaidoo/InBloom-Portfolio-Project`
 2. Install dependencies: `npm install`
-4. Start the server: `npm run start`
 
 ## Usage
 1. `cd plant_disease_model/frontend`
