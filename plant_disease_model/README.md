@@ -9,12 +9,14 @@ InBloom addresses the challenge of providing an easy and effective way for indiv
 To install and set up the project, follow these steps:
 1. Clone the repository: `git clone https://github.com/ChaseNaidoo/InBloom-Portfolio-Project`
 2. Install dependencies: `npm install`
-3. Configure the environment variables: `cp .env`
 4. Start the server: `npm run start`
 
 ## Usage
-1. Start the server: `npm run start`
-2. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
+1. `cd plant_disease_model/frontend`
+2. Start the server: `npm run start`
+3. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
+4. In another terminal, `cd plant_disease_model/api`
+5. Run `./main`
 
 ## Contributing
 If you'd like to contribute to the project, please follow these steps:
