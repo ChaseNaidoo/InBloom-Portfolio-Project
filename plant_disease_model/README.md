@@ -21,7 +21,16 @@ To install and set up the project, follow these steps:
 2. Start the server: `npm run start`
 3. Open your browser and navigate to [http://localhost:3000](http://localhost:3000)
 4. In another terminal, `cd plant_disease_model/api`
-5. Run `./main`
+5. Run `./main.py`
+6. To train a custom model, modify `training/inbloom_datasets` to include your datasets
+7. Modify `main.py` in `plant_disease_model/api` to include class names
+8. Modify `training_model.py` in `training` to include the correct number of classes
+9. `cd plant_disease_model/training`
+10. Run `./training_model.py`
+
+# Screenshots
+![feature2](https://github.com/ChaseNaidoo/InBloom-Portfolio-Project/assets/125469506/eb392c75-0559-4696-be12-229cea7497b0)
+![feature3](https://github.com/ChaseNaidoo/InBloom-Portfolio-Project/assets/125469506/401e0106-c1a1-481b-ac3f-6cfb0ccd9fe1)
 
 ## Contributing
 If you'd like to contribute to the project, please follow these steps:
