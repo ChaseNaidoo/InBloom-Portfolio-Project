@@ -5,7 +5,7 @@ InBloom addresses the challenge of providing an easy and effective way for indiv
 
 **Authors:** [Cameron Chase Naidoo](https://github.com/ChaseNaidoo)
 
-## Insstallation
+## Installation
 To install and set up the project, follow these steps:
 1. Clone the repository: `git clone https://github.com/ChaseNaidoo/InBloom-Portfolio-Project`
 2. Install dependencies: `npm install`
