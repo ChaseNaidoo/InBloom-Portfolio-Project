@@ -2,6 +2,7 @@
 
 ## Introduction
 InBloom addresses the challenge of providing an easy and effective way for individuals, particularly farmers, to determine the health of their plants through AI-driven plant disease detection.
+
 **Authors:** [Cameron Chase Naidoo](https://github.com/ChaseNaidoo)
 
 ## Insstallation
@@ -28,4 +29,4 @@ If you'd like to contribute to the project, please follow these steps:
 - [Plant AI](https://github.com/soumyajit4419/Plant_AI)
 
 ## Licensing
-This project is licensed under the [MIT] License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
