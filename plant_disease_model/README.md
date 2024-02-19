@@ -1,5 +1,5 @@
 # InBloom: Empowering Agriculture Through Open-Source Plant Disease Detection
-![Screenshot 2024-02-18 at 15-08-49 InBloom_presentation](https://github.com/ChaseNaidoo/InBloom-Portfolio-Project/assets/125469506/bdb061a4-6b50-4c33-9078-2b4597ec02ec)
+![inbloom_cover](https://github.com/ChaseNaidoo/InBloom-Portfolio-Project/assets/125469506/7d88dae9-8f60-4d9f-92dc-3bf3281d8ccd)
 
 ## Overview
 InBloom addresses the challenge of providing an easy and effective way for individuals, particularly farmers, to determine the health of their plants through AI-driven plant disease detection.
