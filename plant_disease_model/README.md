@@ -1,4 +1,4 @@
-# InBloom: Empowering Agriculture Through Open-Source Plant Disease Detection
+# InBloom
 ![inbloom_cover](https://github.com/ChaseNaidoo/InBloom-Portfolio-Project/assets/125469506/7d88dae9-8f60-4d9f-92dc-3bf3281d8ccd)
 
 ## Overview
